@@ -10,7 +10,7 @@ decorations = "Transparent"
 dimensions = { columns = 140, lines = 50 }
 opacity = 0.7
 option_as_alt = "Both"
-padding = { x = 20, y = 30 }
+padding = { x = 20, y = 35 }
 position = "None"
 startup_mode = "Maximized"
 
