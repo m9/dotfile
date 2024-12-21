@@ -2,7 +2,7 @@
 
 [general]
 import = [
-  "~/.config/alacritty/themes/themes/zenburn.toml" 
+  "~/.config/alacritty/themes/themes/argonaut.toml" 
 ]
 
 [env]
