@@ -6,9 +6,26 @@ plugins=(git ssh-agent pyenv)
 source $ZSH/oh-my-zsh.sh
 eval "$(zellij setup --generate-auto-start zsh)"
 
+# Github username
+export GITHUB_USERNAME=m9
+
 # set up neovim as a default editor
 export EDITOR=nvim
 alias vim=nvim
+
+# Add chezmoi aliases
+aliaz cz="chezmoi"
+
+alias cze="chezmoi edit"
+alias cza="chezmoi apply"
+alias czcd="chezmoi cd"
+
+alias czg="chezmoi git"
+alias czga="chezmoi git add"
+alias czgc="chezmoi git commit"
+alias czgp="chezmoi git push"
+alias czgst="chezmoi git status"
+
 
 # configure HashiCorp Vault
 export VAULT_ADDR=http://127.0.0.1:8200
