@@ -1,0 +1,40 @@
+# Config reference: https://alacritty.org/config-alacritty.html
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+blur = true
+# decorations = "Buttonless"
+decorations = "Transparent"
+dimensions = { columns = 140, lines = 50 }
+opacity = 0.7
+option_as_alt = "Both"
+padding = { x = 20, y = 30 }
+position = "None"
+startup_mode = "Maximized"
+
+[scrolling]
+history = 100000
+multiplier = 3 # Number of line scrolled for every input scroll increment. Default: 3
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Thin" } # Default style: Regular
+size = 16
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = "Block" # Default: Block
+
+[mouse]
+hide_when_typing = true
+
+[[hints.enabled]]
+command = "open" # On macOS
+hyperlinks = true
+post_processing = true
+persist = false
+mouse = { enabled = true, mods = "Command" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
