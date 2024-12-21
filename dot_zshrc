@@ -14,10 +14,12 @@ export EDITOR=nvim
 alias vim=nvim
 
 # Add chezmoi aliases
-aliaz cz="chezmoi"
+alias cz="chezmoi"
 
 alias cze="chezmoi edit"
 alias cza="chezmoi apply"
+alias czu="chezmoi update"
+alias czd="chezmoi diff"
 alias czcd="chezmoi cd"
 
 alias czg="chezmoi git"
