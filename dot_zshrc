@@ -4,7 +4,7 @@ ZSH_THEME="bureau"
 plugins=(git ssh-agent pyenv)
 
 source $ZSH/oh-my-zsh.sh
-# eval "$(zellij setup --generate-auto-start zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
 
 # Github username
 export GITHUB_USERNAME=m9
