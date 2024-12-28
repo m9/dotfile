@@ -4,6 +4,8 @@ ZSH_THEME="bureau"
 plugins=(git ssh-agent pyenv rvm)
 
 source $ZSH/oh-my-zsh.sh
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(zellij setup --generate-auto-start zsh)"
 
 # Github username
@@ -34,8 +36,6 @@ export VAULT_ADDR=http://127.0.0.1:8200
 
 # configure ACME.sh
 . "/Users/m0s/.acme.sh/acme.sh.env"
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
