@@ -6,6 +6,10 @@ plugins=(git ssh-agent pyenv rvm)
 source $ZSH/oh-my-zsh.sh
 eval "$(zellij setup --generate-auto-start zsh)"
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # Github username
 export GITHUB_USERNAME=m9
 
