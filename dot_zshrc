@@ -48,4 +48,3 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 # Add local bin
 export PATH="$PATH:$HOME/bin"
 
-export PATH="/opt/homebrew/opt/node@18/bin:$PATH
