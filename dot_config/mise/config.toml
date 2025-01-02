@@ -1,4 +1,6 @@
 [tools]
+aws-sso = "latest"
+awscli = "latest"
 node = "23.5.0"
 ruby = "3.4"
 terraform = "1.5.7"
