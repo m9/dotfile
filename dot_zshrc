@@ -22,6 +22,8 @@ alias cz="chezmoi"
 
 alias cze="chezmoi edit"
 alias cza="chezmoi apply"
+alias czadd="chezmoi add"
+alias czra="chezmoi re-add"
 alias czu="chezmoi update"
 alias czd="chezmoi diff"
 alias czcd="chezmoi cd"
