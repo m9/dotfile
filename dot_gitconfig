@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Serhii Balbieko
+	email = serhii@balbieko.com
+[pull]
+	rebase = true
+[core]
+	excludesfile = /Users/m0s/.config/git/ignore
