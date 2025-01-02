@@ -14,8 +14,8 @@ eval "$(zellij setup --generate-auto-start zsh)"
 export GITHUB_USERNAME=m9
 
 # set up neovim as a default editor
-#export EDITOR=nvim
-#alias vim=nvim
+export EDITOR=nvim
+alias vim=nvim
 
 # Add chezmoi aliases
 alias cz="chezmoi"
