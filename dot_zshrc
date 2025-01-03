@@ -42,6 +42,6 @@ export VAULT_ADDR=http://127.0.0.1:8200
 #. "/Users/m0s/.acme.sh/acme.sh.env"
 
 # Add local bin
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/usr/local/bin:$HOME/bin"
 
 eval "$(/opt/local/bin/mise activate zsh)"
