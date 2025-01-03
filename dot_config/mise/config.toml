@@ -1,6 +1,8 @@
 [tools]
 aws-sso = "latest"
 awscli = "latest"
+dotnet = "8"
+java = "zulu-21"
 node = "23.5.0"
 ruby = "3.4"
 terraform = "1.5.7"
