@@ -5,8 +5,8 @@ plugins=(git ssh-agent macports fzf)
 
 source $ZSH/oh-my-zsh.sh
 
-# Add MacPorts
-export PATH="/opt/local/bin:$PATH"
+# Add Homebrew
+export PATH="/opt/homebrew/bin:$PATH"
 
 eval "$(zellij setup --generate-auto-start zsh)"
 
@@ -34,14 +34,11 @@ alias czgc="chezmoi git commit"
 alias czgp="chezmoi git push"
 alias czgst="chezmoi git status"
 
-
 # configure HashiCorp Vault
 export VAULT_ADDR=http://127.0.0.1:8200
-
-# configure ACME.sh
-#. "/Users/m0s/.acme.sh/acme.sh.env"
 
 # Add local bin
 export PATH="$PATH:/usr/local/bin:$HOME/bin"
 
-eval "$(/opt/local/bin/mise activate zsh)"
+eval "$(/opt/homebrew/bin/mise activate zsh)"
+
