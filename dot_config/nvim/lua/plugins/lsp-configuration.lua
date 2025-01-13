@@ -19,7 +19,13 @@ return {
 		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "terraformls", "ruby_lsp", "pyright" },
+				ensure_installed = {
+          "lua_ls",
+          "terraformls",
+          "ruby_lsp",
+          "pyright",
+          "pylsp",
+        },
 				automatic_installation = true,
 			})
 		end,
@@ -33,6 +39,29 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.ruby_lsp.setup({})
 			lspconfig.pyright.setup({})
+			lspconfig.pylsp.setup({
+        settings = {
+          pylsp = {
+            plugins = {
+              -- formatter options
+              black = { enabled = true },
+              autopep8 = { enabled = false },
+              yapf = { enabled = false },
+              flake8 = { enabled = false },
+              -- linter options
+              pylint = { enabled = true },
+              pyflakes = { enabled = false },
+              pycodestyle = { enabled = false },
+              -- type checker options
+              mypy = { enabled = false },
+              -- import sort options
+              isort = { enabled = true },
+              -- auto completion options
+              jedi = { enabled = true },
+            },
+          },
+        }
+      })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 
