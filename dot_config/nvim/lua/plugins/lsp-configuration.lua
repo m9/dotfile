@@ -19,7 +19,7 @@ return {
 		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "terraformls", "ruby_lsp" },
+				ensure_installed = { "lua_ls", "terraformls", "ruby_lsp", "pyright" },
 				automatic_installation = true,
 			})
 		end,
@@ -32,6 +32,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.ruby_lsp.setup({})
+			lspconfig.pyright.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 
