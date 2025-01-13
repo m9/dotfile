@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 # Add Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
 
+export ZELLIJ_AUTO_ATTACH=true
 eval "$(zellij setup --generate-auto-start zsh)"
 
 # Github username
